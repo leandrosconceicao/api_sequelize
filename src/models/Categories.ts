@@ -12,7 +12,7 @@ interface CategoryAttributes {
     deletedAt?: Date;
 }
 
-export interface CategoryInput extends Optional<CategoryAttributes, 'id' | 'image' | 'nome' | 'storeCode'> {};
+export interface CategoryInput extends Optional<CategoryAttributes, 'id' | 'nome'> {};
 export interface CategoryOutput extends Required<CategoryAttributes>{};
 
 class Category extends Model<CategoryAttributes, CategoryInput> implements CategoryAttributes {
